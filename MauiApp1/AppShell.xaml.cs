@@ -7,6 +7,7 @@ public partial class AppShell : Shell
 	public AppShell()
 	{
 		InitializeComponent();
-		Routing.RegisterRoute(nameof(ForgetPasswordPage), typeof(ForgetPasswordPage));
+		Routing.RegisterRoute("forgetpassword", typeof(ForgetPasswordPage));
+		Routing.RegisterRoute("register", typeof(RegisterPage));
 	}
 }

@@ -20,7 +20,7 @@
         <Button Text="กดข่อยพิ่!"
                 FontSize="20"
                 WidthRequest="200"
-                BackgroundColor="black"
+                BackgroundColor="#FF8181FF"
                 Margin="10"
                 ImageSource="icon_apple.png"
                 ContentLayout="left"

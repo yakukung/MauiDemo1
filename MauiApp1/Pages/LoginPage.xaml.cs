@@ -1,3 +1,5 @@
+using MauiDemo.ViewModel;
+
 namespace MauiApp1.Pages;
 
 public partial class LoginPage : ContentPage
@@ -5,6 +7,8 @@ public partial class LoginPage : ContentPage
 	public LoginPage()
 	{
 		InitializeComponent();
+		BindingContext = new LoginViewModel();
+		
 	}
   private async void Button_Clicked(object sender, EventArgs e)
     {
@@ -19,7 +23,14 @@ public partial class LoginPage : ContentPage
 
     private async void Tapped(object sender, TappedEventArgs e)
     {
-		System.Diagnostics.Debug.WriteLine("Tapped");
-		await Shell.Current.GoToAsync(nameof(ForgetPasswordPage));
+   	 await Shell.Current.GoToAsync("forgetpassword");
     }
+
+
+private async void Register(object sender, TappedEventArgs e)
+{
+    System.Diagnostics.Debug.WriteLine("register");
+    await Shell.Current.GoToAsync("register");
 }
+
+} 
